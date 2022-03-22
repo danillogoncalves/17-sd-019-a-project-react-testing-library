@@ -23,7 +23,7 @@ describe('1. Teste o componente <App.js />', () => {
     });
   });
 
-  it('', () => {
+  it('URL desconhecida abre o Not Found.', () => {
     const { history } = renderWithRouter(<App />);
     history.push('/agumom');
     console.log(history);
