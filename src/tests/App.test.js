@@ -25,7 +25,6 @@ describe('1. Teste o componente <App.js />', () => {
   it('URL desconhecida abre o Not Found.', () => {
     const { history } = renderWithRouter(<App />);
     history.push('/agumom');
-    console.log(history);
 
     const notFound = screen.getByRole('heading',
       { name: /Page requested not found/i, level: 2 });

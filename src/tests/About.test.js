@@ -36,7 +36,6 @@ describe('2. Teste o componente <About.js />.', () => {
   it('Teste se a página contém dois parágrafos com texto sobre a Pokédex.', () => {
     renderWithRouter(<About />);
     const paragraphs = screen.getAllByText(/Pokémons/i);
-    console.log(paragraphs);
     expect(paragraphs).toHaveLength(2);
   });
 });

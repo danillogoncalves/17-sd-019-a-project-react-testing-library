@@ -23,7 +23,6 @@ describe('6. Teste o componente <Pokemon.js />', () => {
   it('Teste o link More Details.', () => {
     const { history } = renderWithRouter(<App />);
     const linkMoreDetails = screen.getByRole('link', { name: /more details/i });
-    console.log(linkMoreDetails.href);
     expect(linkMoreDetails).toHaveAttribute('href', '/pokemons/25');
 
     userEvent.click(linkMoreDetails);
